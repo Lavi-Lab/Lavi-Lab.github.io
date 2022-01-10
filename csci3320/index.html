@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSCI 3320: Fundamentals of Machine Learning — Spring 2022</title>
+
+    <!-- Google Fonts: Merriweather -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./CSCI3320_Fundamentals_of_Machine_Learning_Spring_2022_files/css2" rel="stylesheet">
+    <style>
+     :root { --normal-weight: 400; --bold-weight: 700; }
+     body { margin: 0px; font-family: Merriweather, Georgia, serif; font-weight: var(--normal-weight); color: #333; }
+     header { background: #5bc0de; width: 100%; padding-top: 1ex; padding-bottom: 1ex; }
+     h1 { font-size: 180%; font-weight: var(--bold-weight); margin-top: 0px; margin-bottom: 0px; }
+     h2 { font-size: 150%; font-weight: var(--bold-weight); }
+     .news { max-height: 14em; overflow-y: auto; overflow-x: hidden; }
+     a, a:visited { color: #007bff; text-decoration: none; }
+     .container { margin-left: auto; margin-right: auto; }
+     @media only screen and (min-width:1200px) {
+       .container { width:1170px; }
+     }
+     table.striped > tbody > tr:nth-of-type(odd) { background-color:
+       rgba(0,0,0,.05); }
+     table { border-collapse: collapse; margin-bottom: 1rem; }
+     table td { border: none; padding: .3em; vertical-align: top; }
+     table th { font-weight: var(--bold-weight); }
+     table > caption { color: #777; }
+     dl > dt { font-weight: var(--bold-weight);}
+     dl > dd { margin-bottom: .5ex; }
+     @media only screen and (min-width: 768px) {
+       dl { display: grid; grid-template-columns: repeat(6, 1fr); }
+       dl > dt { overflow: hidden; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
+       dl > dd { grid-column: span 5; }
+       ul.condensed { column-count: 2; list-style-position: inside; }
+     }
+     .flex { display: flex; flex-wrap: wrap; }
+     .flex > span { margin-right: 3em; }
+     .text-muted { color: #636c72; }
+     .text-info { color: #5bc0de; }
+     .text-danger { color: #dc3545; }
+    </style>
+  <style>#haloword-pron { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -34px; }#haloword-pron:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -34px; }#haloword-open { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -17px; }#haloword-open:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -17px; }#haloword-close { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px 0; }#haloword-close:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px 0; }#haloword-add { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -51px; }#haloword-add:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -51px; }#haloword-remove { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -68px; }#haloword-remove:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -68px; }</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed="">
+    <header>
+      <h1 class="container">CSCI 3320: Fundamentals of Machine Learning — Spring 2022</h1>
+    </header>
+    <div class="container" id="main">
+      <section id="news">
+        <h2 class="section-title">News</h2>
+        <ul class="news">
+          <li>Jan 10: Welcome all the students! Wish you enjoy our Machine Learning course and have a splendid semester!
+        </ul>
+      </section> <!-- #news -->
+      <section id="info">
+        <h2 class="section-title">Information</h2>
+        <dl>
+          <dt>Lectures</dt>
+          <dd class="flex">
+            <span>Tuesday, 8:30 - 10:15 am, Science Centre L1</span>
+            <span>Wednesday, 8:30 - 9:15 am, William M W Mong Eng Bldg LT</span>
+          </dd>
+          <dt>Tutorials</dt>
+          <dd class="flex">
+            <span>Wednesday, 9:30 - 10:15 am, William M W Mong Eng Bldg LT</span>
+          <dt>Instructor</dt>
+          <dd class="flex">
+              <span><a href="mailto:liweiwang@cuhk.edu.hk">Prof. Liwei WANG</a></span>
+          </dd>
+          <dt>Teaching Assistant</dt>
+          <dd class="flex">
+            <span><a href="mailto:1155165847@link.cuhk.edu.hk">Yanyang LI</a></span>
+            <span><a href="mailto:1155154040@link.cuhk.edu.hk">Mark ZHAO</a></span>
+            <span><a href="mailto:zelin@link.cuhk.edu.hk">Zelin ZHAO</a></span>
+            <span><a href="mailto:sjhuang@cse.cuhk.edu.hk">Shijia HUANG</a></span>
+
+          </dd>
+          <dt>Announcement</dt>
+          <dd>All updates will be sent to your emails. Please check your university emails.</a></dd>
+          <dt>Grading</dt>
+          <dd>Assignments (40%) + Final Examination (60%)</dd>
+          <dt>Book References</dt>
+          <dd>
+            <li>
+              <a href="http://www.amazon.com/Learning-From-Data-Yaser-Abu-Mostafa/dp/1600490069">Learning from Data, by Yaser S. Abu-Mostafa</a>
+            </li>
+            <li>
+              <a href="http://www.amazon.com/Machine-Learning-Probabilistic-Perspective-Computation/dp/0262018020">Machine Learning: A Probabilistic Perspective, by Kevin P. Murphy</a>
+            </li>
+            <li>
+              <a href="http://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738">Pattern Recognition and Machine Learning, by Christopher M. Bishop</a>
+            </li>
+            <li>
+              Abundant resources available on the web
+            </li>
+          </dd>
+        </dl>
+        <p>
+          Tutorial sessions would be the fastest and clearest way to discuss any problem.
+          You are also welcomed to send emails to the instructor and the TAs.
+        </p>
+      </section> <!-- info -->
+      <section id="topics">
+        <h2 class="section-title">Topics</h2>
+        <p style="color: red">Placeholder</p>
+      </section>
+      <section id="lectures">
+        <h2 class="section-title">Lectures</h2>
+        <p>All related lecture materials will be posted on <a href="https://blackboard.cuhk.edu.hk/">Blackboard
+        → Lecture Notes</a>.</p>
+        <p>The following schedule (tentative) are subject to minor modifications.</p>
+        <table class="striped" align="center">
+          <caption><span>Schedule</span></caption>
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Date</th>
+              <th>Topic</th>
+              <th>Other</th>
+            </tr>
+          </thead>
+          <tbody style="text-align: center">
+            <tr>
+              <td>1</td>
+              <td>Jan 11, 12</td>
+              <td>Introduction to Machine Learning and This Course</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jan 18, 19</td>
+              <td>Supervised Learning</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Jan 25, 26</td>
+              <td>Supervised Learning</td>
+              <td>Release of Assignment 1</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Feb 8, 9</td>
+              <td>Regularization and Model Selection</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Feb 15, 16</td>
+              <td>Generative Learning Algorithms</td>
+              <td>Release of Assignment 2</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Feb 22, 23</td>
+              <td>Probability Theory Review<br>Multivariate Gaussian and More</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Mar 1, 2</td>
+              <td>Kernel Methods</td>
+              <td>Release of Assignment 3</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Mar 8, 9</td>
+              <td>Decision Trees and Boosting</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Mar 15, 16</td>
+              <td>Unsupervised Learning and Semi-Supervised Learning</td>
+              <td>Release of Assignment 4</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Mar 22, 23</td>
+              <td>Active Learning</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Mar 29, 30</td>
+              <td>Basics of Deep Learning</td>
+              <td>Release of Assignment 5</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Apr 12, 13</td>
+              <td>Advanced Topics for Machine Learning:<br>Applications in Computer Vision</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Apr 19, 20</td>
+              <td>Advanced Topics for Machine Learning:<br>Applications in Natural Language Processing</td>
+              <td>Release of Assignment 6</td>
+            </tr>
+            <tr>
+          </tr></tbody>
+        </table>
+      </section>
+      <section id="homework">
+        <h2>Assignments (40%)</h2>
+        <p>There will be six assignments in total.</p>
+        <ul>
+          <li>
+            Assignments may involve question sets and Python coding
+          </li>
+          <li>
+            Points allocation to assignments is: 5 + 7 + 7 + 7 + 7 + 7 = 40%
+          </li>
+          <li>
+            All six assignments must be done independently by yourself
+          </li>
+          <li>
+            You are encouraged to either typeset your solution in LaTeX or Word
+          </li>
+          <li>
+            You can also scan or take photos of your handwritten solution and bundle your
+            scans/photos into one single PDF file
+          </li>
+        </ul>
+        <p>
+          If there is no coding involved, please submit your answers as one single PDF file.
+          Otherwise, please compress the PDF file with related codes into a ZIP file.
+          The PDF file should be accepted by <a href="https://academic2.veriguide.org/portalcuhk/">VeriGuide</a> before submission.
+          All the submissions should be made via <a href="https://blackboard.cuhk.edu.hk/">Blackboard</a> by 11:59 pm.
+        </p>
+
+
+      </section>
+
+      <section id="Exam">
+        <h2> Final Examination (60%)</h2>
+        <p>More information about Final Examination will be released later.</p>
+      </section>
+      <section id="Course Policy">
+        <h2>Course Policy</h2>
+        <ul>
+          <li>Academic Honesty Policy</li>
+          <p>The Chinese University of Hong Kong places very high importance
+          on honesty in academic work submitted by students,
+          and adopts a policy of <span style="color: red">zero tolerance</span> on academic dishonesty.
+          </p>
+          <p>
+          All submissions of assignments, project, etc. should be processed by
+          <a href="https://academic2.veriguide.org/portalcuhk/">VeriGuide</a> first.
+          </p>
+          <li>Late Submission Policy</li>
+          <p>
+           No late assignments will be accepted. NO EXCEPTION!!!<br>
+          </p>
+
+        </ul>
+
+
+      </section>
+    </div> <!-- #main -->
+
+  
+
+<div id="haloword-lookup" class="ui-widget-content ui-draggable"><div id="haloword-title"><span id="haloword-word"></span><a herf="#" id="haloword-pron" class="haloword-button" title="发音"></a><audio id="haloword-audio"></audio><div id="haloword-control-container"><a herf="#" id="haloword-add" class="haloword-button" title="加入单词表"></a><a herf="#" id="haloword-remove" class="haloword-button" title="移出单词表"></a><a href="https://www.cse.cuhk.edu.hk/~siuon/csci5160/#" id="haloword-open" class="haloword-button" title="查看单词详细释义" target="_blank"></a><a herf="#" id="haloword-close" class="haloword-button" title="关闭查询窗"></a></div><br style="clear: both;"></div><div id="haloword-content"></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
