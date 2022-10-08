@@ -17,6 +17,8 @@ nav:
 
 <div class="mydiv">
     <ul>
+        <li><font face="Arial" size=5>2022/10: Two long papers got accepted to EMNLP 2022 covering our new work on dialogue evaluation and knowledge-grounded dialogue.</font></li>
+        <li><font face="Arial" size=5>2022/07: We won the 1st place in Language and Intelligence Challenge 2022 (Semantic Video Understanding track)!</font></li>
         <li><font face="Arial" size=5>2022/03: NLP@LaVi is hiring! We are hiring Phd students, RAs, full time researchers in NLP group at LaVi Lab!</font></li>
         <li><font face="Arial" size=5>2022/03: Vision+NLP@LaVi is hiring! We are hiring Phd students and RAs in Vision+NLP group at LaVi Lab!</font></li>
         <li><font face="Arial" size=5>2022/03: Three papers got accepted to CVPR 2022 including our new work on Language + Vision.</font></li>
