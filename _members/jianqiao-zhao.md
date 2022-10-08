@@ -6,7 +6,7 @@ role: phd
 group: nlp
 order: 0
 links:
-  home-page: https://lavi-lab.github.io/
+  home-page: https://www.linkedin.com/in/jianqiao-zhao/
 ---
 **<center>Education & Experience</center>**
 + Bachelor of Engineering from Tsinghua University, Beijing, 2012-2016

@@ -6,7 +6,7 @@ role: phd
 group: nlp
 order: 2
 links:
-  home-page: https://lavi-lab.github.io/
+  home-page: https://henryhzy.github.io/
 ---
 **<center>Education & Experience</center>**
 + Bachelor of Engineering from Sun Yat-sen University (National Scholarship*2), Guangzhou, 2018-2022
