@@ -1,0 +1,49 @@
+{%- assign background = page.header | default: site.header | default: "none" -%}
+{%- if background == "none" -%}
+  {%- assign background = nil -%}
+{%- endif -%}
+
+{%- assign dark = page.header-dark -%}
+{%- if dark == nil -%}
+  {%- assign dark = site.header-dark -%}
+{%- endif -%}
+{%- if dark == nil -%}
+  {%- assign dark = true -%}
+{%- endif -%}
+
+<div class="container">
+  <header>
+    <a
+      href="{{ '/' | relative_url }}"
+      class="logo_row"
+      data-tooltip="Home"
+    >
+      <img src="../images/cuhk.png" class="logo" alt="Logo image" />
+      {% if site.logo-text != false %}
+      <!-- <font face="Arial" size=8><p align="">LaVi Lab<br></p></font> -->
+
+      <span class="logo_text">
+        <span class="logo_title">{{ site.title }}</span>
+        {% if site.subtitle %}
+          <span class="logo_subtitle">{{ site.subtitle }}</span>
+        {% endif %}
+      </span>
+      {% endif %}
+    </a>
+    <nav class="nav_row">
+      {%- assign pages = site.pages | where_exp: "page", "page.nav" | sort: "nav.order" -%}
+      {%- for page in pages -%}
+        {%- if page.nav -%}
+          {%- include link.html type="link" text=page.title tooltip=page.nav.tooltip link=page.dir -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+  </header>
+  <div class="container-content">
+    <!-- <img class="container-content-img" src="../images/cuhk.png" alt=""> -->
+    <div class="container-content-text">
+      <font face="Arial" size=5><p align="">Language and Vision Lab<br></p></font>
+      <font face="Arial" size=5><p align="">The Chinese University of Hong Kong</p></font>
+    </div>
+  </div>
+</div>

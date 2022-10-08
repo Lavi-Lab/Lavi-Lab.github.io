@@ -1,0 +1,150 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  padding: 0px 0px 30px 0px;
+  color: white;
+  background: rgba($color: #000000, $alpha: 0.3);
+  color: white;
+  box-sizing: border-box;
+}
+.container::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  background: url(../images/cuhk3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  // opacity: 0.5;
+}
+.container-content {
+  box-sizing: border-box;
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  margin-top: 150px;
+}
+.container-content-text {
+  display: inline-flex;
+  flex-direction: column;
+}
+.container-content-img {
+  width: 360px;
+  height: 284px;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 20px;
+  padding: 30px 40px;
+  // background: $gray-800;
+  // background: rgba($color: #000000, $alpha: 0.4);
+  // box-shadow: $shadow;
+
+  & * {
+    font-family: $sans;
+  }
+
+  .logo_row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .logo {
+      max-width: 100%;
+      height: 60px;
+    }
+
+    .logo_text {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 5px;
+      line-height: $spacing - 0.3;
+
+      .logo_title {
+        font-size: 3rem;
+      }
+
+      .logo_subtitle {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: $gray-500;
+      }
+    }
+  }
+
+  .nav_row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: $regular;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    .link {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    &:hover .link {
+      opacity: 0.25;
+    }
+
+    .link:hover {
+      opacity: 1;
+    }
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  // screen width where nav bar wraps to under logo
+  // adjust based on width of your lab name and nav bar
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  // screen width where logo and nav bar go from horizontal to vertical
+  // adjust based on width of your lab name and nav bar
+  @media (max-width: 700px) {
+    .logo_row {
+      flex-direction: column;
+
+      .logo_text {
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+    .nav_row {
+      flex-direction: column;
+      justify-content: center;
+
+      .link {
+        width: 100%;
+      }
+    }
+  }
+}
