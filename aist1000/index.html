@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AIST 1000: Introduction to Artificial Intelligence and Machine Learning — FALL 2023</title>
+
+    <!-- Google Fonts: Merriweather -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./files/css2" rel="stylesheet">
+    <style>
+     :root { --normal-weight: 400; --bold-weight: 700; }
+     body { margin: 0px; font-family: Merriweather, Georgia, serif; font-weight: var(--normal-weight); color: #333; }
+     header { background: #5bc0de; width: 100%; padding-top: 1ex; padding-bottom: 1ex; }
+     h1 { font-size: 180%; font-weight: var(--bold-weight); margin-top: 0px; margin-bottom: 0px; }
+     h2 { font-size: 150%; font-weight: var(--bold-weight); }
+     .news { max-height: 14em; overflow-y: auto; overflow-x: hidden; }
+     a, a:visited { color: #007bff; text-decoration: none; }
+     .container { margin-left: auto; margin-right: auto; }
+     @media only screen and (min-width:1200px) {
+       .container { width:1170px; }
+     }
+     table.striped > tbody > tr:nth-of-type(odd) { background-color:
+       rgba(0,0,0,.05); }
+     table { border-collapse: collapse; margin-bottom: 1rem; }
+     table td { border: none; padding: .3em; vertical-align: top; }
+     table th { font-weight: var(--bold-weight); }
+     table > caption { color: #777; }
+     dl > dt { font-weight: var(--bold-weight);}
+     dl > dd { margin-bottom: .5ex; }
+     @media only screen and (min-width: 768px) {
+       dl { display: grid; grid-template-columns: repeat(6, 1fr); }
+       dl > dt { overflow: hidden; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
+       dl > dd { grid-column: span 5; }
+       ul.condensed { column-count: 2; list-style-position: inside; }
+     }
+     .flex { display: flex; flex-wrap: wrap; }
+     .flex > span { margin-right: 3em; }
+     .text-muted { color: #636c72; }
+     .text-info { color: #5bc0de; }
+     .text-danger { color: #dc3545; }
+    </style>
+  <style>#haloword-pron { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -34px; }#haloword-pron:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -34px; }#haloword-open { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -17px; }#haloword-open:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -17px; }#haloword-close { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px 0; }#haloword-close:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px 0; }#haloword-add { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -51px; }#haloword-add:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -51px; }#haloword-remove { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -68px; }#haloword-remove:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -68px; }</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed="">
+    <header>
+      <h2 class="container">AIST 1000: Introduction to Artificial Intelligence and Machine Learning — FALL 2023</h2>
+    </header>
+    <div class="container" id="main">
+      <section id="news">
+        <h2 class="section-title">News</h2>
+        <ul class="news">
+          <li>Sept 3: Welcome all the students! Wish you enjoy our introduction to AI & ML course and have a splendid semester!
+        </ul>
+      </section>
+      <section id="info">
+        <h2 class="section-title">Information</h2>
+        <dl>
+          <dt>Lectures</dt>
+          <dd class="flex">
+            <span>Tuesday, 10:30 - 11:15 am, Mong Man Wai Bldg 707</span>
+          </dd>
+          <dt>Tutorials</dt>
+          <dd class="flex">
+            <span>Tuesday, 11:30 - 12:15 pm, Mong Man Wai Bldg 707</span>
+          <dt>Instructor</dt>
+          <dd class="flex">
+              <span><a href="mailto:liweiwang@cuhk.edu.hk">Prof. Liwei WANG</a></span>
+          </dd>
+          <!-- <dt>Office Hour</dt>
+          <dd class="flex">
+              <span>Wednesday 3 - 5 pm. Please make an appointment with Prof. Wang at least half day in advance. Meeting location would be Rm 1017, SHB.</span>
+          </dd> -->
+          <dt>Teaching Assistant</dt>
+          <dd class="flex">
+            <span><a href="mailto:1155187701@link.cuhk.edu.hk">Ziyuan HU</a></span>
+            <span><a href="mailto:1155204980@link.cuhk.edu.hk">Duo ZHENG</a></span>
+          </dd>
+          <dt>Announcement</dt>
+          <dd>All updates will be sent to your emails. Please check your university emails.</a></dd>
+          <dt>Grading</dt>
+          <dd>Attendance (10%) + Mid-term Report (30%) + Final Report & Presentation (60%)</dd>
+          <!-- <dt>Book References</dt>
+          <dd>
+            <li>
+              Learning from Data, by Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin
+            </li>
+            <li>
+              Machine Learning: A Probabilistic Perspective, by Kevin P. Murphy
+            </li>
+            <li>
+              Pattern Recognition and Machine Learning, by Christopher M. Bishop
+            </li>
+            <li>
+              Abundant resources available on the web
+            </li>
+          </dd> -->
+        </dl>
+        <p>
+          Tutorial sessions would be the fastest and clearest way to discuss any problem.
+          You are also welcomed to send emails to the instructor and the TAs.
+        </p>
+      </section> <!-- info -->
+      <!-- <section id="topics">
+        <h2 class="section-title">Topics</h2>
+        <p>
+          Fundamentals of Machine Learning covers important concepts and algorithms in Machine Learning,
+          including supervised learning, regularization and model selection, bayesian and generative learning models,
+          kernel methods, decision trees and boosting, unsupervised learning, active learning, etc.
+          This course will also have two lectures discussing how machine learning can be used in various applications of
+          computer vision and natural language processing.
+        </p>
+      </section> -->
+      <section id="lectures">
+        <h2 class="section-title">Lectures</h2>
+        <p>All related lecture materials will be posted on <a href="https://blackboard.cuhk.edu.hk/">Blackboard
+        → Lecture Notes</a>.</p>
+        <p><span style="color: red">Note: Lecture slides cannot be distributed outside the class.</span></p>
+        The following schedule (tentative) are subject to minor modifications.
+        <table class="striped" align="center">
+          <caption><span>Schedule</span></caption>
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Date</th>
+              <th>Topic</th>
+              <!-- <th>Tutorial</th> -->
+              <th>Remark</th>
+            </tr>
+          </thead>
+          <tbody style="text-align: center">
+            <tr>
+              <td>1</td>
+              <td>Sept 5</td>
+              <td>Course Introduction</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Sept 12</td>
+              <td>Introduction to Natural Language Processing (NLP)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Sept 19</td>
+              <td>NLP Seminar</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Sept 26</td>
+              <td>Introduction to Computer Vision (CV)</td>
+              <td></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Oct 3</td>
+                <td>CV Seminar</td>
+              <td></td>
+              </tr>
+        
+              <tr>
+                <td>6</td>
+                <td>Oct 10</td>
+                <td>Introduction to Artificial Intelligent for Science (AI4Sci)</td>
+                <td></td>
+              </tr>
+        
+              <tr>
+                <td>7</td>
+                <td>Oct 17</td>
+                <td>AI4Sci Seminar</td>
+                <td></td>
+              </tr>
+        
+              <tr>
+                <td>8</td>
+                <td>Oct 24</td>
+                <td>Introduction to Robotics</td>
+                <td></td>
+              </tr>
+        
+              <tr>
+                <td>9</td>
+                <td>Oct 31</td>
+                <td>Robotics Seminar</td>
+                <td></td>
+              </tr>
+        
+              <tr>
+                <td>10</td>
+                <td>Nov 7</td>
+                <td>Introduction to AI Application</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>11</td>
+                <td>Nov 14</td>
+                <td>AI Application Seminar</td>
+                <td></td>
+              </tr>
+        
+              <tr>
+                <td>12</td>
+                <td>Nov 21</td>
+                <td>Final Presentation (1)</td>
+                <td></td>
+              </tr>
+        
+              <tr>
+                <td>13</td>
+                <td>Nov 28</td>
+                <td>Final Presentation (2)</td>
+                <td></td>
+              </tr>
+        
+        </tbody>
+        </table>
+      </section>
+      <section id="homework">
+        <h2>Attendance (10%)</h2>
+        <p>Attendance check every week from Week 2 (1% each).</p>
+      </section>
+
+      <section id="Mid-term">
+        <h2>Mid-term Report (30%)</h2>
+        The details will be released later. 
+        <p>
+          Unless further notice, the report should be submitted in a single PDF file.
+        </p>
+        <p>
+          The PDF file should be accepted by <a href="https://academic2.veriguide.org/portalcuhk/">VeriGuide</a> before submission.
+        </p>
+        <p>
+          All the submissions should be made via <a href="https://blackboard.cuhk.edu.hk/">Blackboard</a> by 11:59 pm.
+        </p>
+      </section>
+
+      <section id="Final">
+        <h2> Final Report & Presentation (60%)</h2>
+        The details will be released later. 
+        <p>
+            Unless further notice, the report and presentation slides should be submitted separately in PDF format.
+          </p>
+          <p>
+            The PDF files should be accepted by <a href="https://academic2.veriguide.org/portalcuhk/">VeriGuide</a> before submission.
+          </p>
+          <p>
+            All the submissions should be made via <a href="https://blackboard.cuhk.edu.hk/">Blackboard</a> by 11:59 pm.
+          </p>
+
+      </section>
+
+      <section id="Course Policy">
+        <h2>Course Policy</h2>
+        <ul>
+          <li>Academic Honesty Policy</li>
+          <p>The Chinese University of Hong Kong places very high importance
+          on honesty in academic work submitted by students,
+          and adopts a policy of <span style="color: red">zero tolerance</span> on academic dishonesty.
+          </p>
+          <p>
+          All submissions of assignments, project, etc. should be processed by
+          <a href="https://academic2.veriguide.org/portalcuhk/">VeriGuide</a> first.
+          </p>
+          <li>Submission Policy</li>
+          <p>
+            Reports cannot be plagiarized from the Internet or generated using AI tools (e.g., ChatGPT).
+          </p>
+          <p>
+           No late submission will be accepted.<br>
+          </p>
+
+        </ul>
+
+
+      </section>
+    </div> <!-- #main -->
+
+  
+
+<div id="haloword-lookup" class="ui-widget-content ui-draggable"><div id="haloword-title"><span id="haloword-word"></span><a herf="#" id="haloword-pron" class="haloword-button" title="发音"></a><audio id="haloword-audio"></audio><div id="haloword-control-container"><a herf="#" id="haloword-add" class="haloword-button" title="加入单词表"></a><a herf="#" id="haloword-remove" class="haloword-button" title="移出单词表"></a><a href="https://www.cse.cuhk.edu.hk/~siuon/csci5160/#" id="haloword-open" class="haloword-button" title="查看单词详细释义" target="_blank"></a><a herf="#" id="haloword-close" class="haloword-button" title="关闭查询窗"></a></div><br style="clear: both;"></div><div id="haloword-content"></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
