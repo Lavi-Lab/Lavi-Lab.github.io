@@ -1084,7 +1084,7 @@ color: #ECEBEB;
 
 
 /* All Mobile Sizes (devices and browser) */
-	/* @media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 767px) {
 		.intro-header {
 			height: 100%;
 			padding-top: 50px;
@@ -1108,7 +1108,7 @@ color: #ECEBEB;
 		.button_down {display:none}
 		
 		
-	} */
+	}
 
 /* Mobile Landscape */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
