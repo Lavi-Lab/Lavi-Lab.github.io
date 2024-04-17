@@ -1084,13 +1084,13 @@ color: #ECEBEB;
 
 
 /* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
+	/* @media only screen and (max-width: 767px) {
 		.intro-header {
 			height: 100%;
 			padding-top: 50px;
 			padding-bottom: 50px;
 			color: #f8f8f8;
-		    background-image: none; 
+		    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5f/Pavilion_of_Harmony_201607.jpg); 
 			background-size: cover;
 			text-align: center;
 			background-color: #34495e;
@@ -1108,7 +1108,7 @@ color: #ECEBEB;
 		.button_down {display:none}
 		
 		
-	}
+	} */
 
 /* Mobile Landscape */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
